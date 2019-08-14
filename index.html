@@ -7,7 +7,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Vidd.ai a(i)ssisted editing</title>
+	<title>Vidd.ai a(i)ssisted file maps</title>
 <!--
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 -->
@@ -64,6 +64,7 @@
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 
+<!--
 	<style>
 	.tooltip {
 	display:none;
@@ -77,6 +78,7 @@
 	}
 
 	</style>
+-->
 
 	<script>
  	function detectmob() {
@@ -118,8 +120,10 @@
 
 <!--
 	<section id="fh5co-home" data-section="home" style="background-image: url(images/full_image_1.jpg);" data-stellar-background-ratio="0.5">
--->
 	<section id="fh5co-home" data-section="home" style="background-image: url(images/bad_footage0.gif);" data-stellar-background-ratio="0.5">
+	<section id="fh5co-home" data-section="home" style="background-image: url(images/full_o_files.jpg);" data-stellar-background-ratio="0.5">
+-->
+	<section id="fh5co-home" data-section="home" style="background-image: url(images/of_course.png);" data-stellar-background-ratio="0.5">
 		<div class="gradient"></div>
 		<div class="container">
 			<div class="text-wrap">
@@ -133,8 +137,8 @@ src="https://vidd-ai.github.io/art-luca/segSummary.html?u=AF99803F-868A-443D-87C
 src="images/bad_footage0.gif" frameBorder="0" marginwidth="0" marginheight="0" style="width:1px; min-width:100%; height:250px;" scrolling="no" ></iframe>
 -->
 							<h1 class="to-animate">Vidd.ai</h1>
-<h5>"I have to hunt for footage that is usable."<h5>
-<h3 class="to-animate">Grab highlights and usable footage without rummaging<br/> through your video files</h3>
+<h5>"Umm of course I know where it is.."<h5>
+<h3 class="to-animate">Find highlights and grab usable footage<br/>without having to organize your video files</h3>
 						</div>
 					</div>
 				</div>
@@ -161,8 +165,18 @@ src="images/bad_footage0.gif" frameBorder="0" marginwidth="0" marginheight="0" s
 				<div class="row">
 					<div class="core-features">
 						<div class="grid2 to-animate" style="background-image: url(images/full_image_2.jpg);">
+                				<iframe id="category-map" sandbox="allow-popups allow-scripts allow-forms allow-same-origin" src="" frameBorder="0" marginwidth="0" marginheight="0" style="width:1px; min-width:100%; height:580px;" scrolling="yes" ></iframe>
+<!--
                 				<iframe sandbox="allow-popups allow-scripts allow-forms allow-same-origin"
 src="https://vidd-ai.github.io/art-luca/segSummary.html?u=AF99803F-868A-443D-87CB-E18DD370E655&c=File&d=demo" frameBorder="0" marginwidth="0" marginheight="0" style="width:1px; min-width:100%; height:500px;" scrolling="no" ></iframe>
+-->
+						<script>
+						if (detectmob()) {
+						   $("#category-map").attr('src', "https://vidd-ai.github.io/EFC5B894-B032-4133-9D1F-5EA87E27BDE4/category_map/index.html?u=EFC5B894-B032-4133-9D1F-5EA87E27BDE4&c=Cat&m=true");
+						} else {
+						   $("#category-map").attr('src', "https://vidd-ai.github.io/EFC5B894-B032-4133-9D1F-5EA87E27BDE4/category_map/index.html?u=EFC5B894-B032-4133-9D1F-5EA87E27BDE4&c=Cat");
+						}
+						</script>
 						</div>
 						<div class="grid2">
 							<div class="core-f">
@@ -286,7 +300,7 @@ https://vidd-ai.github.io/n-art-luca-2/segView.html?fn=GX012053.MP4&u=207D704A-7
 						<div class="project-grid to-animate-2" style="background-image:  url(images/project-1.jpg);">
 
 							<div class="desc to-animate">
-								<h4><a href="#iwasthere-category">Category Map from home videos</a><br/>Map a library into categories<br/>including activity, places, and facial expressions</h4>
+								<h4><a href="#iwasthere-category">Category Map from home videos</a><br/>Map files across devices into content categories<br/>including activity, places, and facial expressions</h4>
 								<span>&copy; IWasThere_Dad<br/>"... lifesaver, I had more than 600 hours of footage!"</span>
 							</div>
 
@@ -395,8 +409,9 @@ https://vidd-ai.github.io/n-art-luca-2/segView.html?fn=GX012053.MP4&u=207D704A-7
 							</ul>
 <!--
 							<p><a href="#" class="btn btn-primary">Sign up</a></p>
--->
 							<p><a href="#" class="btn btn-primary masterTooltip" title="founder.vidd.ai at gmail"><i class="icon-envelope masterTooltip" title="founder.vidd.ai at gmail"></i> Contact Us</a></p>
+-->
+							<p><a href="#" class="btn btn-primary" title="founder.vidd.ai at gmail"><i class="icon-envelope masterTooltip" title="founder.vidd.ai at gmail"></i> Contact Us</a></p>
 						</div>
 					</div>
 					<div class="clearfix visible-sm-block"></div>
@@ -537,13 +552,14 @@ https://vidd-ai.github.io/n-art-luca-2/segView.html?fn=GX012053.MP4&u=207D704A-7
 
 				<div class="col-md-8 to-animate">
 					<h3 class="section-title">About Us</h3>
-					<p>We are techies in Silicon Valley, California<br/>into tech + videos and hope to help as many videographers and creators as possible.<br/>Thanks for your support!</p>
+					<p>We are techies in Silicon Valley, California into tech + videos<br/>and hope to help as many parents, gamers, videographers, and creators as possible.<br/>Thanks for your support!</p>
 					<ul class="contact-info">
 <!--
 						<li><i class="icon-map-marker"></i>Silicon Valley, California</li>
 						<li><i class="icon-phone"></i>+ 1235 2355 98</li>
--->
 						<li><i class="icon-envelope masterTooltip" title="founder.vidd.ai at gmail"></i>Drop us a line, we love feedback..</li>
+-->
+						<li><i class="icon-envelope " title="founder.vidd.ai at gmail"></i>Drop us a line at <span style="font-family:courier;">[founder dot vidd dot ai at gmail]</span>, we love feedback..</li>
 <!--
 						<li><i class="icon-globe2"></i><a href="#">www.yoursite.com</a></li>
 -->
