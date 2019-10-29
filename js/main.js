@@ -170,9 +170,10 @@
 		}
 	};
 
-	var exploreAnimate = function() {
+	var exploreAnimate = function(id) {
 
-		var explore = $('#fh5co-explore');
+		//var explore = $('#fh5co-explore');
+		var explore = $(id);
 		if ( explore.length > 0 ) {	
 
 			explore.waypoint( function( direction ) {
@@ -262,9 +263,9 @@
 		}
 	};
 
-
-	var pricingAnimate = function() {
-		var pricing = $('#fh5co-pricing');
+	var pricingAnimate = function(id) {
+		//var pricing = $('#fh5co-pricing');
+		var pricing = $(id);
 		if ( pricing.length > 0 ) {	
 
 			pricing.waypoint( function( direction ) {
@@ -451,10 +452,13 @@
 		
 		// Animations
 		homeAnimate();
-		exploreAnimate();
+		exploreAnimate('#fh5co-explore');
+		exploreAnimate('#fh5co-explore2');
 		gettingStartedAnimate();
-		pricingAnimate();
+		pricingAnimate('#fh5co-pricing');
+		pricingAnimate('#fh5co-pricing2');
 		servicesAnimate();
+		pricingAnimate('#fh5co-pricing3');
 		teamAnimate();
 		footerAnimate();
 		counter();
